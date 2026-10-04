@@ -20,7 +20,7 @@ function EMIPage() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/api/emi",
+        "https://carvanta-vehicle-platform.onrender.com/api/emi",
         {
           method: "POST",
           headers: {

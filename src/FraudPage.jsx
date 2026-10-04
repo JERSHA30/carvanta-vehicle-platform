@@ -30,7 +30,7 @@ function FraudPage() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/api/fraud-check",
+        "https://carvanta-vehicle-platform.onrender.com/api/fraud-check",
         {
           method: "POST",
           headers: {

@@ -34,7 +34,7 @@ function RecommendationPage() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/api/recommend",
+        "https://carvanta-vehicle-platform.onrender.com/api/recommend",
         {
           method: "POST",
           headers: {
