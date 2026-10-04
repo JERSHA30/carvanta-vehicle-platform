@@ -1,0 +1,354 @@
+.fraud-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: #f5efe6;
+  color: #241815;
+}
+
+.fraud-left {
+  position: relative;
+  min-height: 100vh;
+  padding: 90px 9%;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    145deg,
+    #241815,
+    #3a2420 55%,
+    #7e2626
+  );
+
+  color: #fffaf3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.fraud-label {
+  margin: 0 0 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #e9a095;
+}
+
+.fraud-left h1 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(65px, 7vw, 105px);
+  line-height: 0.88;
+  letter-spacing: -4px;
+  font-weight: 500;
+}
+
+.fraud-left h1 span {
+  color: #d96b5f;
+  font-style: italic;
+}
+
+.fraud-description {
+  max-width: 390px;
+  margin-top: 38px;
+
+  color: rgba(255, 250, 243, 0.68);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.fraud-mark {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+
+  font-family: "Playfair Display", serif;
+  font-size: 220px;
+
+  color: rgba(255, 250, 243, 0.035);
+}
+
+.fraud-left-bottom {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  bottom: 35px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(255, 250, 243, 0.2);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: rgba(255, 250, 243, 0.5);
+}
+
+.fraud-right {
+  min-height: 100vh;
+
+  padding: 80px 10%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fraud-header {
+  margin-bottom: 35px;
+}
+
+.fraud-header p {
+  margin: 0 0 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #9f2929;
+}
+
+.fraud-header h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.fraud-form {
+  max-width: 620px;
+}
+
+.fraud-input {
+  margin-bottom: 22px;
+}
+
+.fraud-input label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #6d5a52;
+}
+
+.fraud-input input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(36, 24, 21, 0.25);
+
+  background: transparent;
+
+  outline: none;
+
+  color: #241815;
+
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.fraud-input input:focus {
+  border-bottom-color: #9f2929;
+}
+
+.fraud-input input::placeholder {
+  color: #a99891;
+}
+
+.fraud-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.fraud-button {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 18px;
+
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #241815,
+    #7e2626,
+    #9f2929
+  );
+
+  color: #fffaf3;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.fraud-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 35px
+    rgba(159, 41, 41, 0.25);
+}
+
+.fraud-result {
+  max-width: 650px;
+
+  padding: 38px;
+
+  background: linear-gradient(
+    145deg,
+    #241815,
+    #45231f 55%,
+    #8f2929
+  );
+
+  color: #fffaf3;
+}
+
+.fraud-result-top {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid
+    rgba(255, 250, 243, 0.18);
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #f3b0a6;
+}
+
+.fraud-result > p:first-of-type {
+  margin: 32px 0 6px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #f3b0a6;
+}
+
+.fraud-result h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: 58px;
+  font-weight: 500;
+}
+
+.fraud-result-text {
+  color: rgba(255, 250, 243, 0.65);
+  font-size: 14px;
+}
+
+.fraud-checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 30px;
+
+  border-top: 1px solid
+    rgba(255, 250, 243, 0.18);
+}
+
+.fraud-checks div {
+  padding: 18px 0;
+
+  border-bottom: 1px solid
+    rgba(255, 250, 243, 0.1);
+}
+
+.fraud-checks span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 9px;
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 250, 243, 0.45);
+}
+
+.fraud-checks strong {
+  font-size: 14px;
+}
+
+.fraud-reset {
+  margin-top: 25px;
+
+  border: none;
+  background: transparent;
+
+  color: #f3b0a6;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .fraud-page {
+    grid-template-columns: 1fr;
+  }
+
+  .fraud-left {
+    min-height: 450px;
+    padding: 80px 8%;
+  }
+
+  .fraud-right {
+    
+    padding: 70px 8%;
+  }
+}
+
+@media (max-width: 550px) {
+  .fraud-row,
+  .fraud-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .fraud-left h1 {
+    font-size: 62px;
+  }
+}
+.fraud-error {
+  margin-top: 20px;
+  color: #9f2929;
+  font-size: 13px;
+  font-weight: 600;
+}

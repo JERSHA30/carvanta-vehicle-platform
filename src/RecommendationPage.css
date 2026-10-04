@@ -1,0 +1,267 @@
+.recommendation-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  background: #f5efe6;
+  color: #241815;
+  font-family: "DM Sans", sans-serif;
+}
+
+.recommendation-left {
+  background: #241815;
+  color: #f5efe6;
+  padding: 80px 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.recommendation-left h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(50px, 5vw, 78px);
+  line-height: 0.95;
+  font-weight: 400;
+  margin: 90px 0 30px;
+}
+
+.recommendation-left h1 span {
+  color: #d96b5f;
+}
+
+.recommendation-description {
+  max-width: 390px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d8cbc0;
+}
+
+.recommendation-mark {
+  margin-top: auto;
+  font-family: "Playfair Display", serif;
+  font-size: 120px;
+  line-height: 1;
+  opacity: 0.08;
+}
+
+.recommendation-left-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #604b44;
+  padding-top: 18px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c9bbb0;
+}
+
+.recommendation-right {
+  padding: 70px 80px;
+  overflow-y: auto;
+}
+
+.recommendation-header p,
+.recommendation-results > p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #9f2929;
+  margin: 0 0 12px;
+}
+
+.recommendation-header h2,
+.recommendation-results h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 0 40px;
+}
+
+.recommendation-form {
+  max-width: 650px;
+}
+
+.recommendation-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.recommendation-input {
+  margin-bottom: 22px;
+}
+
+.recommendation-input label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.recommendation-input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid #cdbfb3;
+  background: #fffaf3;
+  color: #241815;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.recommendation-input input:focus {
+  border-color: #9f2929;
+}
+
+.recommendation-button {
+  width: 100%;
+  border: none;
+  background: #9f2929;
+  color: white;
+  padding: 17px;
+  margin-top: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.recommendation-button:hover {
+  background: #7f2020;
+}
+
+.recommendation-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.recommendation-error {
+  color: #9f2929;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.recommendation-results {
+  max-width: 760px;
+}
+
+.recommendation-results-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 55px;
+}
+
+.recommendation-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendation-card {
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fffaf3;
+  border: 1px solid #ded2c7;
+}
+
+.recommendation-card-number {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #9f2929;
+}
+
+.recommendation-card-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 5px;
+  text-transform: capitalize;
+}
+
+.recommendation-card-info p {
+  margin: 3px 0;
+  font-size: 12px;
+  color: #776861;
+}
+
+.recommendation-score {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  text-align: right;
+}
+
+.recommendation-score span {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #776861;
+}
+
+.recommendation-reset {
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #241815;
+  padding: 13px 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.recommendation-reset:hover {
+  background: #241815;
+  color: #fffaf3;
+}
+
+@media (max-width: 900px) {
+  .recommendation-page {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendation-left {
+    min-height: 480px;
+    padding: 50px 30px;
+  }
+
+  .recommendation-left h1 {
+    margin-top: 60px;
+  }
+
+  .recommendation-right {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendation-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .recommendation-card {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .recommendation-score {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .recommendation-header h2,
+  .recommendation-results h2 {
+    font-size: 38px;
+  }
+}

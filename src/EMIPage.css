@@ -1,0 +1,215 @@
+.emi-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: #f5efe6;
+  color: #241815;
+}
+
+.emi-left {
+  position: relative;
+  padding: 130px 8%;
+  background: #241815;
+  color: #fffaf3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emi-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #e9a095;
+  margin-bottom: 28px;
+}
+
+.emi-left h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(65px, 7vw, 105px);
+  line-height: 0.9;
+  font-weight: 500;
+  letter-spacing: -4px;
+  margin: 0;
+}
+
+.emi-left h1 span {
+  color: #d96b5f;
+  font-style: italic;
+}
+
+.emi-description {
+  max-width: 380px;
+  margin-top: 35px;
+  color: rgba(255, 250, 243, 0.7);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.emi-mark {
+  position: absolute;
+  right: 7%;
+  bottom: 3%;
+  font-family: "Playfair Display", serif;
+  font-size: 220px;
+  color: rgba(255, 250, 243, 0.035);
+}
+
+.emi-right {
+  padding: 90px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emi-form-header p {
+  margin: 0 0 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #9f2929;
+}
+
+.emi-form-header h2 {
+  margin: 0 0 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.emi-form {
+  max-width: 600px;
+}
+
+.emi-input {
+  margin-bottom: 24px;
+}
+
+.emi-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6d5a52;
+  text-transform: uppercase;
+}
+
+.emi-input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid rgba(36, 24, 21, 0.25);
+  outline: none;
+  background: transparent;
+  color: #241815;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.emi-input input:focus {
+  border-bottom-color: #9f2929;
+}
+
+.emi-input input::placeholder {
+  color: #a99891;
+}
+
+.emi-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.emi-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 18px 24px;
+  border: none;
+  background: linear-gradient(135deg, #241815, #9f2929);
+  color: #fffaf3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emi-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(159, 41, 41, 0.22);
+}
+
+.emi-result {
+  max-width: 600px;
+  margin-top: 35px;
+  padding: 28px;
+  background: linear-gradient(135deg, #241815, #7e2626);
+  color: #fffaf3;
+}
+
+.emi-result > p {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #f3b0a6;
+  font-weight: 700;
+}
+
+.emi-result h3 {
+  margin: 8px 0 25px;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.emi-summary {
+  display: flex;
+  gap: 50px;
+}
+
+.emi-summary span {
+  display: block;
+  margin-bottom: 6px;
+  color: rgba(255, 250, 243, 0.6);
+  font-size: 11px;
+}
+
+.emi-summary strong {
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .emi-page {
+    grid-template-columns: 1fr;
+  }
+
+  .emi-left {
+    min-height: 420px;
+    padding: 80px 7%;
+  }
+
+  .emi-right {
+    padding: 70px 7%;
+  }
+
+  .emi-left h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 550px) {
+  .emi-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .emi-summary {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
